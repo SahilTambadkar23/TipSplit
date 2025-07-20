@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useMemo } from "react";
-import { DollarSign, Users, Minus, Plus } from "lucide-react";
+import { IndianRupee, Users, Minus, Plus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -82,7 +82,7 @@ export function TipCalculator() {
         <div className="space-y-2">
           <Label htmlFor="bill" className="font-semibold">Bill Amount</Label>
           <div className="relative">
-            <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
+            <IndianRupee className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
             <Input
               id="bill"
               type="text"
@@ -152,14 +152,14 @@ export function TipCalculator() {
               <p className="text-lg">Tip Amount</p>
               <p className="text-sm opacity-80">/ person</p>
             </div>
-            <p className="text-4xl font-bold">${tipAmountPerPerson.toFixed(2)}</p>
+            <p className="text-4xl font-bold">₹{tipAmountPerPerson.toFixed(2)}</p>
           </div>
           <div className="flex items-center justify-between">
             <div>
               <p className="text-lg">Total</p>
               <p className="text-sm opacity-80">/ person</p>
             </div>
-            <p className="text-4xl font-bold">${totalPerPerson.toFixed(2)}</p>
+            <p className="text-4xl font-bold">₹{totalPerPerson.toFixed(2)}</p>
           </div>
         </div>
         <Button 
