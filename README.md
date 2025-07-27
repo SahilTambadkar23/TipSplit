@@ -1,5 +1,4 @@
-# Firebase Studio
+# OUTPUT
 
-This is a NextJS starter in Firebase Studio.
+<img width="1918" height="925" alt="image" src="https://github.com/user-attachments/assets/cafbe5ca-0e39-48d6-bbd4-9b723c05fcf2" />
 
-To get started, take a look at src/app/page.tsx.
